@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import Counter from './components/Counter/Counter';
+import CounterWithState from './components/Counter/Counter';
+import Header from './components/Header/Header';
 
 
 
 class App extends Component {
   render() {
-    
+
     return (
-      <Counter />
+      <div>
+        <Header />
+        <CounterWithState />
+      </div>
     );
   }
 }

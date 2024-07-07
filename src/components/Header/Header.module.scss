@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    list-style: none;
+    &Item {
+        margin: 0 10px;
+        min-width: 50px;
+    }
+}
+
+.darkTheme {
+background: black;
+color: yellow;
+}
+
+
+.lightTheme {
+    background: white;
+    color: black;
+    }
+    

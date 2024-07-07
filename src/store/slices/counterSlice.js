@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   count: 0,
@@ -14,14 +14,17 @@ const counterSlice = createSlice({
     },
     decrement: (state, action) => {
       state.count -= state.step;
+    },
+    setStep: (state, action) => { // action - це об'єкт який складається з 2полів {type, paayload}
+      state.step = Number(action.payload);
     }
   }
 });
 
-const { reducer, actions }  = counterSlice;
+const { reducer, actions } = counterSlice;
 
 // action creators
-const { increment, decrement } = actions;
+const { increment, decrement, setStep } = actions;
 
-export { increment, decrement };
+export { increment, decrement, setStep };
 export default reducer;
