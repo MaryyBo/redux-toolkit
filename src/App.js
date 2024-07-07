@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CounterWithState from './components/Counter/Counter';
+import Counter from './components/Counter/Counter';
 import Header from './components/Header/Header';
 
 
@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <CounterWithState />
+        <Counter />
       </div>
     );
   }
