@@ -1,3 +1,5 @@
+@use '../../common/styles/template';
+
 .header {
     display: flex;
     flex-direction: row;
@@ -16,14 +18,12 @@
     }
 }
 
+
+
 .darkTheme {
-background: black;
-color: yellow;
+    @extend %darkTheme;
 }
-
-
 .lightTheme {
-    background: white;
-    color: black;
-    }
+   @extend %lightTheme;
+ }
     

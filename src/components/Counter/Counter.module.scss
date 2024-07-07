@@ -1,10 +1,8 @@
+@use '../../common/styles/template';
+
 .darkTheme {
-    background: black;
-    color: yellow;
-    }
-    
-    
-    .lightTheme {
-        background: white;
-        color: black;
-        }
+    @extend %darkTheme
+}
+.lightTheme {
+   @extend %lightTheme
+ }
